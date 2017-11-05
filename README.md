@@ -4,13 +4,17 @@
 #### A One-Day Workshop at the Wissenschaftszentrum Berlin (WZB)
 
 [Kohei Watanabe](https://koheiw.net), Department of Methodology, London School of Economics and Political Science
+
 [Stefan Müller](http://muellerstefan.net), Department of Political Science, Trinity College Dublin
+
 [Kenneth Benoit](http://kenbenoit.net), Department of Methodology, London School of Economics and Political Science 
 
 **Date:** January 31, 2018, Wissenschaftszentrum Berlin
 **quanteda version:** 0.9.9.65 (CRAN)  
 
 This repository contains the workshop materials for a one-day version of a workshop [Introduction to Text Analysis Using R](https://github.com/kbenoit/ITAUR) taught by [Kohei Watanabe](https://koheiw.net) and [Stefan Müller](http://muellerstefan.net). The original version of this workshop was developed by [Kenneth Benoit](http://kenbenoit.net).
+
+**Structure**
 
 The course will taught interactively, as a series of "mini-modules" consisting of presentations of different aspects of quantitative text analysis using R, followed by practical exercises.
 
@@ -21,8 +25,8 @@ The course will taught interactively, as a series of "mini-modules" consisting o
 - Module 4: Processing and preparing texts for analysis (10:50-12:30)
 - _Lunch break_ (12:30-13:30)
 - Module 5: Descriptive analysis (13:30-15:00)
-- _Break_
-- Module 6: Advanced analysis and working with other text packages (15:15-17:00)
+- _Break_ (15:00-15:15)
+- Module 6: Advanced analysis and working with other text packages (15:15-16:30)
 
 ### Instructions for using this resource ###
 

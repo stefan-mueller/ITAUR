@@ -1,14 +1,28 @@
 ## Introduction to Text Analysis Using R
 
 
-#### A Three-Day tutorial
+#### A One-Day Workshop at the Wissenschaftszentrum Berlin (WZB)
 
-[Kenneth Benoit](kbenoit@lse.ac.uk), Department of Methodology, LSE  
+[Kohei Watanabe](https://koheiw.net), Department of Methodology, London School of Economics and Political Science
+[Stefan Müller](http://muellerstefan.net), Department of Political Science, Trinity College Dublin
+[Kenneth Benoit](http://kenbenoit.net), Department of Methodology, London School of Economics and Political Science 
 
-**Date:** Updated for Week commencing 6-8 June 2017
+**Date:** January 31, 2018, Wissenschaftszentrum Berlin
 **quanteda version:** 0.9.9.65 (CRAN)  
 
-This repository contains the workshop materials for a one-day version of a workshop [Introduction to Text Analysis Using R](link here) taught by Kenneth Benoit.  This workshop and the materials it contains are funded by by the European Research Council grant ERC-2011-StG 283794-QUANTESS: *Quantitative Analysis of Text for Social Science*.
+This repository contains the workshop materials for a one-day version of a workshop [Introduction to Text Analysis Using R](https://github.com/kbenoit/ITAUR) taught by [Kohei Watanabe](https://koheiw.net) and [Stefan Müller](http://muellerstefan.net). The original version of this workshop was developed by [Kenneth Benoit](http://kenbenoit.net).
+
+The course will taught interactively, as a series of "mini-modules" consisting of presentations of different aspects of quantitative text analysis using R, followed by practical exercises.
+
+- Module 1: Overview and demonstration of text analysis using R (9:00-9:30)
+- Module 2: Basic text data types and functions for text (9:30-10:00)
+- Module 3: Getting textual data into R (10:00-10:30)
+- _Coffee break_ (10:30-10:50)
+- Module 4: Processing and preparing texts for analysis (10:50-12:30)
+- _Lunch break_ (12:30-13:30)
+- Module 5: Descriptive analysis (13:30-15:00)
+- _Break_
+- Module 6: Advanced analysis and working with other text packages (15:15-17:00)
 
 ### Instructions for using this resource ###
 
@@ -27,11 +41,9 @@ You can also subscribe to the repository if you have [a GitHub account](https://
 
 This workshop covers how to perform common text analysis and natural language processing tasks using R.  Contrary to a belief popular among some data scientists, when used properly, R is a fast and powerful tool for managing even very large text analysis tasks.  
 
-The course comprises six mini "modules", each consisting of guided instruction in the form of presentation of methods followed by student implementation of those methods prior to advancing to the next module.   Only after we have completed the practical exercises will we advance to the next stage.  
+The course comprises six mini "modules", each consisting of guided instruction in the form of presentation of methods followed by student implementation of those methods prior to advancing to the next module. Only after we have completed the practical exercises will we advance to the next stage.  
 
 We will cover how to format and input source texts, how to structure their metadata, and how to prepare them for analysis.  This includes common tasks such as tokenisation, including constructing ngrams and "skip-grams", removing stopwords, stemming words, and other forms of feature selection.  We show how to: get summary statistics from text, search for and analyse keywords and phrases, analyse text for lexical diversity and readability,  detect collocations, apply dictionaries, and measure term and document associations using distance measures.  Our analysis covers basic text-related data processing in the R base language, but most relies on the **quanteda** package  (https://github.com/kbenoit/quanteda) for the quantitative analysis of textual data.  We also cover how to pass the structured objects from quanteda into other text analytic packages for doing topic modelling, latent semantic analysis, regression models, and other forms of machine learning.
-
-
 
 ### Prerequisites
 
@@ -41,7 +53,7 @@ While it is designed for those who have used R in some form previously, expertis
 
 Designed to be done before the course or after, to augment what is presented during the course.  These are just suggestions -- no reading before the course is required.
 
-* Browse the **quanteda** R package website, http://quanteda.io, especially the tutorials (also known as vignettes).
+* Browse the **quanteda** R package website, http://quanteda.io, especially the [tutorials](http://docs.quanteda.io/articles/index.html) (also known as vignettes).
 *  [Sanchez, G. (2013) Handling and Processing Strings in R Trowchez Editions. Berkeley, 2013.](http://www.gastonsanchez.com/Handling and Processing Strings in R.pdf)  
 *  [**stringi** package page](http://www.gagolewski.com/software/stringi/), which also includes a good discussion of the [ICU library](http://site.icu-project.org)  
 *  Some guides to regular expressions: [Zytrax.com's User Guide](http://www.zytrax.com/tech/web/regex.htm)
@@ -50,9 +62,6 @@ Designed to be done before the course or after, to augment what is presented dur
 
 
 ### Schedule
-
-The course will taught interactively, as a series of "mini-modules" consisting of presentations of different aspects of quantitative text analysis using R, followed by practical exercises. 
-
 
 ### Module 0: Installation and setup of R and relevant packages
 
@@ -116,12 +125,12 @@ Install the **readtext** package for this section.
 
 #### Integration with other packages
 
-* [**stm**](http://www.structuraltopicmodel.com).  See the `convert()` function, but also I have an outstanding pull request with the **stm** package maintainer to work directly on a **quanteda**  dfm-class object.  
-* [**tokenizers**](http://github.com/ropensci/tokenizers).  A package for tokenizing text in many different and flexible ways.
+* [**TADA - The Text as Data App**](https://github.com/stefan-mueller/tada): A graphical user interface (GUI) for quantitative text analysis and visualisation based on various R packages.
+* [**stm**](http://www.structuraltopicmodel.com): See the `convert()` function, but also I have an outstanding pull request with the **stm** package maintainer to work directly on a **quanteda** dfm-class object.  
+* [**tokenizers**](http://github.com/ropensci/tokenizers): A package for tokenizing text in many different and flexible ways.
 * [**readtext**](https://github.com/kbenoit/readtext): Import and handling for plain and formatted text files. 
-* [**spacyr**](https://github.com/kbenoit/spacyr): an R wrapper to the spaCy "industrial strength natural language processing" Python library from http://spacy.io.  
+* [**spacyr**](https://github.com/kbenoit/spacyr): An R wrapper to the spaCy "industrial strength natural language processing" Python library from http://spacy.io.  
 * [**tidytext**](https://github.com/juliasilge/tidytext): Text mining using dplyr, ggplot2, and other tidy tools.  
-
 
 
 ### Module 7: Tell us about your problems
